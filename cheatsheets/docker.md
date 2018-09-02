@@ -24,7 +24,7 @@ In debug mode?
 Mount volume for live code reloading?
 `docker container run -it --rm --name <container-name> -p <docker-host-port>:<docker-container-port> -e NODE_DEBUG=1 -v $PWD:/opt/app <container-name>`
 
-* Tail logs of  running Docker container in real-time:
+* Tail logs of running Docker container in real-time:
 `docker container logs -f <container-name|ID>`
 
 * Get some real-time metrics about running Docker containers:
@@ -91,8 +91,8 @@ Delete all unused Docker images and containers aggressively:
 * Tail logs of all running Docker containers associated to Docker Compose project in real-time:
 `docker-compose logs -f`
 
-* Connect to running Docker container of specific service using sh:
-`docker-compose exec <service-name> sh `
+* Connect to running Docker container of specific service using `sh`:
+`docker-compose exec <service-name> sh`
 
 * Stop Docker Compose project:
 `docker-compose stop`
